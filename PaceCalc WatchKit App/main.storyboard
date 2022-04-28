@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="4SZ-nN-GWn">
+            <objects>
+                <controller id="dNT-bG-x4y" customClass="InterfaceController" customModule="PaceCalc_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="1" alignment="left" layout="vertical" id="Ksa-pw-gAC">
+                            <items>
+                                <group width="1" height="0.5" alignment="left" id="ldF-hB-dfb">
+                                    <items>
+                                        <button width="0.5" height="1" alignment="left" title="3K" id="AZm-S6-sVl">
+                                            <connections>
+                                                <segue destination="GV0-Yn-QXm" kind="push" id="CQe-ag-jeW"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.5" height="1" alignment="left" title="5K" id="ttM-dF-eXH">
+                                            <connections>
+                                                <segue destination="GV0-Yn-QXm" kind="push" id="kou-KC-BaY"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" height="0.5" alignment="left" id="5BV-LJ-rb0">
+                                    <items>
+                                        <button width="0.5" height="1" alignment="left" title="10K" id="RTY-vZ-0ea">
+                                            <connections>
+                                                <segue destination="GV0-Yn-QXm" kind="push" id="yzM-IC-dJt"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.5" height="1" alignment="left" title="21.1K" id="mjV-WN-OZI">
+                                            <connections>
+                                                <segue destination="GV0-Yn-QXm" kind="push" id="JPX-vB-AfJ"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="63" y="157"/>
+        </scene>
+        <!--Detail Interface Controller-->
+        <scene sceneID="9Un-ca-spv">
+            <objects>
+                <controller id="GV0-Yn-QXm" customClass="DetailInterfaceController" customModule="PaceCalc_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="dhi-w5-HGw">
+                            <items>
+                                <tableRow id="cqr-FO-lNx" customClass="RowController" customModule="PaceCalc_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="out-46-oul">
+                                        <items>
+                                            <label alignment="left" text="Label" id="nKo-L8-hqn"/>
+                                        </items>
+                                    </group>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="388" y="157"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="kou-KC-BaY"/>
+    </inferredMetricsTieBreakers>
+</document>

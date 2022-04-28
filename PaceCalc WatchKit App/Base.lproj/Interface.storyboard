@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch44"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="PaceCalc_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="0.80000000000000004" alignment="left" layout="vertical" id="gsr-0R-asN">
+                            <items>
+                                <group width="1" height="0.5" alignment="left" id="cPe-xE-rsd">
+                                    <items>
+                                        <button width="0.5" height="1" alignment="left" title="3K" id="mxz-lH-fgh"/>
+                                        <button width="0.5" height="1" alignment="left" title="5K" id="RQS-B9-JS0"/>
+                                    </items>
+                                </group>
+                                <group width="1" height="0.5" alignment="left" id="gSd-WR-SFL">
+                                    <items>
+                                        <button width="0.5" height="1" alignment="left" title="10K" id="J73-jp-b34"/>
+                                        <button width="0.5" height="1" alignment="left" title="21.1K" id="g9C-iF-EML"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <button width="1" height="0.20000000000000001" alignment="left" title="Go" id="eNL-8a-ghK">
+                            <connections>
+                                <segue destination="RMC-sc-FHp" kind="push" id="Wry-uv-Xwt"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="129" y="102"/>
+        </scene>
+        <!--Detail Interface Controller-->
+        <scene sceneID="0ct-jh-yBy">
+            <objects>
+                <controller id="RMC-sc-FHp" customClass="DetailInterfaceController" customModule="PaceCalc_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="tkY-Qq-GNH">
+                            <items>
+                                <tableRow identifier="Row" id="6DC-Km-i7B" customClass="RowController">
+                                    <group key="rootItem" width="1" alignment="left" id="BNc-1A-Fa0">
+                                        <items>
+                                            <label width="1" height="1" alignment="left" text="Label" textAlignment="center" id="oWx-Rt-bua"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="itemLabel" destination="oWx-Rt-bua" id="eDJ-FD-fCe"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="myTable" destination="tkY-Qq-GNH" id="D56-DH-BEp"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="386" y="104"/>
+        </scene>
+    </scenes>
+</document>

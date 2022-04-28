@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2843F2232483333A00865570 /* PaceCalc WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2843F2222483333A00865570 /* PaceCalc WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2843F22B2483333D00865570 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2843F22A2483333D00865570 /* Assets.xcassets */; };
+		2843F2322483333D00865570 /* PaceCalc WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2843F2312483333D00865570 /* PaceCalc WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2843F2372483333D00865570 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2843F2362483333D00865570 /* InterfaceController.swift */; };
+		2843F2392483333D00865570 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2843F2382483333D00865570 /* ExtensionDelegate.swift */; };
+		2843F23B2483333F00865570 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2843F23A2483333F00865570 /* Assets.xcassets */; };
+		2843F24B2483374700865570 /* DetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2843F24A2483374700865570 /* DetailInterfaceController.swift */; };
+		2843F24D248339B700865570 /* RowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2843F24C248339B700865570 /* RowController.swift */; };
+		2843F2512483B81200865570 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2843F2502483B81200865570 /* Interface.storyboard */; };
+		28CB502D2815DE6C00ABDF58 /* PacePickController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CB502C2815DE6900ABDF58 /* PacePickController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2843F2242483333A00865570 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2843F2182483333A00865570 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2843F2212483333A00865570;
+			remoteInfo = "PaceCalc WatchKit App";
+		};
+		2843F2332483333D00865570 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2843F2182483333A00865570 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2843F2302483333D00865570;
+			remoteInfo = "PaceCalc WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2843F2422483333F00865570 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2843F2322483333D00865570 /* PaceCalc WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2843F2462483333F00865570 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2843F2232483333A00865570 /* PaceCalc WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2843F21E2483333A00865570 /* PaceCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaceCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2843F2222483333A00865570 /* PaceCalc WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PaceCalc WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2843F22A2483333D00865570 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2843F22C2483333D00865570 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2843F2312483333D00865570 /* PaceCalc WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PaceCalc WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2843F2362483333D00865570 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		2843F2382483333D00865570 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		2843F23A2483333F00865570 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2843F23C2483333F00865570 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2843F24A2483374700865570 /* DetailInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInterfaceController.swift; sourceTree = "<group>"; };
+		2843F24C248339B700865570 /* RowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RowController.swift; path = "../PaceCalc WatchKit App/RowController.swift"; sourceTree = "<group>"; };
+		2843F2502483B81200865570 /* Interface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		28CB502C2815DE6900ABDF58 /* PacePickController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacePickController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2843F22E2483333D00865570 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2843F2172483333A00865570 = {
+			isa = PBXGroup;
+			children = (
+				2843F2262483333A00865570 /* PaceCalc WatchKit App */,
+				2843F2352483333D00865570 /* PaceCalc WatchKit Extension */,
+				2843F21F2483333A00865570 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2843F21F2483333A00865570 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2843F21E2483333A00865570 /* PaceCalc.app */,
+				2843F2222483333A00865570 /* PaceCalc WatchKit App.app */,
+				2843F2312483333D00865570 /* PaceCalc WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2843F2262483333A00865570 /* PaceCalc WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				2843F22A2483333D00865570 /* Assets.xcassets */,
+				2843F2502483B81200865570 /* Interface.storyboard */,
+				2843F22C2483333D00865570 /* Info.plist */,
+			);
+			path = "PaceCalc WatchKit App";
+			sourceTree = "<group>";
+		};
+		2843F2352483333D00865570 /* PaceCalc WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2843F24C248339B700865570 /* RowController.swift */,
+				2843F2362483333D00865570 /* InterfaceController.swift */,
+				2843F24A2483374700865570 /* DetailInterfaceController.swift */,
+				28CB502C2815DE6900ABDF58 /* PacePickController.swift */,
+				2843F2382483333D00865570 /* ExtensionDelegate.swift */,
+				2843F23A2483333F00865570 /* Assets.xcassets */,
+				2843F23C2483333F00865570 /* Info.plist */,
+			);
+			path = "PaceCalc WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2843F21D2483333A00865570 /* PaceCalc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2843F2472483333F00865570 /* Build configuration list for PBXNativeTarget "PaceCalc" */;
+			buildPhases = (
+				2843F21C2483333A00865570 /* Resources */,
+				2843F2462483333F00865570 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2843F2252483333A00865570 /* PBXTargetDependency */,
+			);
+			name = PaceCalc;
+			productName = PaceCalc;
+			productReference = 2843F21E2483333A00865570 /* PaceCalc.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		2843F2212483333A00865570 /* PaceCalc WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2843F2432483333F00865570 /* Build configuration list for PBXNativeTarget "PaceCalc WatchKit App" */;
+			buildPhases = (
+				2843F2202483333A00865570 /* Resources */,
+				2843F2422483333F00865570 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2843F2342483333D00865570 /* PBXTargetDependency */,
+			);
+			name = "PaceCalc WatchKit App";
+			productName = "PaceCalc WatchKit App";
+			productReference = 2843F2222483333A00865570 /* PaceCalc WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		2843F2302483333D00865570 /* PaceCalc WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2843F23F2483333F00865570 /* Build configuration list for PBXNativeTarget "PaceCalc WatchKit Extension" */;
+			buildPhases = (
+				2843F22D2483333D00865570 /* Sources */,
+				2843F22E2483333D00865570 /* Frameworks */,
+				2843F22F2483333D00865570 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PaceCalc WatchKit Extension";
+			productName = "PaceCalc WatchKit Extension";
+			productReference = 2843F2312483333D00865570 /* PaceCalc WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2843F2182483333A00865570 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1330;
+				ORGANIZATIONNAME = "Артем Мартиросян";
+				TargetAttributes = {
+					2843F21D2483333A00865570 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					2843F2212483333A00865570 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					2843F2302483333D00865570 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 2843F21B2483333A00865570 /* Build configuration list for PBXProject "PaceCalc" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2843F2172483333A00865570;
+			productRefGroup = 2843F21F2483333A00865570 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2843F21D2483333A00865570 /* PaceCalc */,
+				2843F2212483333A00865570 /* PaceCalc WatchKit App */,
+				2843F2302483333D00865570 /* PaceCalc WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2843F21C2483333A00865570 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2843F2202483333A00865570 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2843F22B2483333D00865570 /* Assets.xcassets in Resources */,
+				2843F2512483B81200865570 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2843F22F2483333D00865570 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2843F23B2483333F00865570 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2843F22D2483333D00865570 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2843F24B2483374700865570 /* DetailInterfaceController.swift in Sources */,
+				2843F2392483333D00865570 /* ExtensionDelegate.swift in Sources */,
+				2843F24D248339B700865570 /* RowController.swift in Sources */,
+				2843F2372483333D00865570 /* InterfaceController.swift in Sources */,
+				28CB502D2815DE6C00ABDF58 /* PacePickController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2843F2252483333A00865570 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2843F2212483333A00865570 /* PaceCalc WatchKit App */;
+			targetProxy = 2843F2242483333A00865570 /* PBXContainerItemProxy */;
+		};
+		2843F2342483333D00865570 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2843F2302483333D00865570 /* PaceCalc WatchKit Extension */;
+			targetProxy = 2843F2332483333D00865570 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2843F23D2483333F00865570 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2843F23E2483333F00865570 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2843F2402483333F00865570 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4TX7QV6JP;
+				INFOPLIST_FILE = "PaceCalc WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.syanches.PaceCalc.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		2843F2412483333F00865570 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4TX7QV6JP;
+				INFOPLIST_FILE = "PaceCalc WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.syanches.PaceCalc.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		2843F2442483333F00865570 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4TX7QV6JP;
+				IBSC_MODULE = PaceCalc_WatchKit_Extension;
+				INFOPLIST_FILE = "PaceCalc WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.syanches.PaceCalc.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		2843F2452483333F00865570 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4TX7QV6JP;
+				IBSC_MODULE = PaceCalc_WatchKit_Extension;
+				INFOPLIST_FILE = "PaceCalc WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.syanches.PaceCalc.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		2843F2482483333F00865570 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K4TX7QV6JP;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.syanches.PaceCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2843F2492483333F00865570 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K4TX7QV6JP;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.syanches.PaceCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2843F21B2483333A00865570 /* Build configuration list for PBXProject "PaceCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2843F23D2483333F00865570 /* Debug */,
+				2843F23E2483333F00865570 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2843F23F2483333F00865570 /* Build configuration list for PBXNativeTarget "PaceCalc WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2843F2402483333F00865570 /* Debug */,
+				2843F2412483333F00865570 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2843F2432483333F00865570 /* Build configuration list for PBXNativeTarget "PaceCalc WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2843F2442483333F00865570 /* Debug */,
+				2843F2452483333F00865570 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2843F2472483333F00865570 /* Build configuration list for PBXNativeTarget "PaceCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2843F2482483333F00865570 /* Debug */,
+				2843F2492483333F00865570 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2843F2182483333A00865570 /* Project object */;
+}
