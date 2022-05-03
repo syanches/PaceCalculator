@@ -9,8 +9,7 @@
 import WatchKit
 import Foundation
 
-class InterfaceController: WKInterfaceController {
-    
+class RacePickController: WKInterfaceController {
     var pace: Double = 6
 
     override func contextForSegue(withIdentifier segueIdentifier: String) -> Any? {

@@ -10,12 +10,14 @@
 		2843F2232483333A00865570 /* PaceCalc WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2843F2222483333A00865570 /* PaceCalc WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2843F22B2483333D00865570 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2843F22A2483333D00865570 /* Assets.xcassets */; };
 		2843F2322483333D00865570 /* PaceCalc WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2843F2312483333D00865570 /* PaceCalc WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		2843F2372483333D00865570 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2843F2362483333D00865570 /* InterfaceController.swift */; };
+		2843F2372483333D00865570 /* RacePickController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2843F2362483333D00865570 /* RacePickController.swift */; };
 		2843F2392483333D00865570 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2843F2382483333D00865570 /* ExtensionDelegate.swift */; };
 		2843F23B2483333F00865570 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2843F23A2483333F00865570 /* Assets.xcassets */; };
 		2843F24B2483374700865570 /* DetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2843F24A2483374700865570 /* DetailInterfaceController.swift */; };
 		2843F24D248339B700865570 /* RowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2843F24C248339B700865570 /* RowController.swift */; };
 		2843F2512483B81200865570 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2843F2502483B81200865570 /* Interface.storyboard */; };
+		28870BF1281A7AAC00720F0F /* TimePickController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28870BF0281A7AAC00720F0F /* TimePickController.swift */; };
+		28870BF3281A7ABF00720F0F /* StartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28870BF2281A7ABF00720F0F /* StartController.swift */; };
 		28CB502D2815DE6C00ABDF58 /* PacePickController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CB502C2815DE6900ABDF58 /* PacePickController.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,13 +69,15 @@
 		2843F22A2483333D00865570 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2843F22C2483333D00865570 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2843F2312483333D00865570 /* PaceCalc WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PaceCalc WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2843F2362483333D00865570 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		2843F2362483333D00865570 /* RacePickController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacePickController.swift; sourceTree = "<group>"; };
 		2843F2382483333D00865570 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		2843F23A2483333F00865570 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2843F23C2483333F00865570 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2843F24A2483374700865570 /* DetailInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInterfaceController.swift; sourceTree = "<group>"; };
 		2843F24C248339B700865570 /* RowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RowController.swift; path = "../PaceCalc WatchKit App/RowController.swift"; sourceTree = "<group>"; };
 		2843F2502483B81200865570 /* Interface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		28870BF0281A7AAC00720F0F /* TimePickController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimePickController.swift; path = "PaceCalc WatchKit App/TimePickController.swift"; sourceTree = SOURCE_ROOT; };
+		28870BF2281A7ABF00720F0F /* StartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartController.swift; sourceTree = "<group>"; };
 		28CB502C2815DE6900ABDF58 /* PacePickController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacePickController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,8 +124,10 @@
 		2843F2352483333D00865570 /* PaceCalc WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				28870BF0281A7AAC00720F0F /* TimePickController.swift */,
+				28870BF2281A7ABF00720F0F /* StartController.swift */,
 				2843F24C248339B700865570 /* RowController.swift */,
-				2843F2362483333D00865570 /* InterfaceController.swift */,
+				2843F2362483333D00865570 /* RacePickController.swift */,
 				2843F24A2483374700865570 /* DetailInterfaceController.swift */,
 				28CB502C2815DE6900ABDF58 /* PacePickController.swift */,
 				2843F2382483333D00865570 /* ExtensionDelegate.swift */,
@@ -261,8 +267,10 @@
 				2843F24B2483374700865570 /* DetailInterfaceController.swift in Sources */,
 				2843F2392483333D00865570 /* ExtensionDelegate.swift in Sources */,
 				2843F24D248339B700865570 /* RowController.swift in Sources */,
-				2843F2372483333D00865570 /* InterfaceController.swift in Sources */,
+				2843F2372483333D00865570 /* RacePickController.swift in Sources */,
 				28CB502D2815DE6C00ABDF58 /* PacePickController.swift in Sources */,
+				28870BF3281A7ABF00720F0F /* StartController.swift in Sources */,
+				28870BF1281A7AAC00720F0F /* TimePickController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

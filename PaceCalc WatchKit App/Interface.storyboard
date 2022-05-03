@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="20037" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hJg-ia-Pkw">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="20037" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8hb-6J-n6n">
     <device id="watch44"/>
     <dependencies>
         <deployment identifier="watchOS"/>
@@ -7,6 +7,30 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="20006"/>
     </dependencies>
     <scenes>
+        <!--Start Controller-->
+        <scene sceneID="e1t-Qm-pQf">
+            <objects>
+                <controller id="8hb-6J-n6n" customClass="StartController" customModule="PaceCalc_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" verticalAlignment="center" layout="vertical" spacing="20" id="mGy-T6-aJy">
+                            <items>
+                                <button width="1" alignment="left" title="Pace to Splits" id="kc1-b8-ppP">
+                                    <connections>
+                                        <segue destination="hJg-ia-Pkw" kind="push" id="ZH8-XL-jvr"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="Time to Splits" id="5a7-TE-pQS">
+                                    <connections>
+                                        <segue destination="jB4-XB-hXJ" kind="push" id="5Lj-V2-lhS"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-505" y="102"/>
+        </scene>
         <!--Pace Pick Controller-->
         <scene sceneID="Hwl-Tm-Bcj">
             <objects>
@@ -33,12 +57,27 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-115" y="102"/>
+            <point key="canvasLocation" x="-228" y="-29"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Time Pick Controller-->
+        <scene sceneID="Eq5-nx-Qm6">
+            <objects>
+                <controller id="jB4-XB-hXJ" customClass="TimePickController" customModule="PaceCalc_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="bvG-pl-8BW">
+                            <items>
+                                <button width="1" alignment="left" title="Button" id="WqH-j8-Gb6"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-228" y="269"/>
+        </scene>
+        <!--Race Pick Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller alwaysBounce="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="PaceCalc_WatchKit_App" customModuleProvider="target">
+                <controller alwaysBounce="YES" id="AgC-eL-Hgc" customClass="RacePickController" customModule="PaceCalc_WatchKit_App" customModuleProvider="target">
                     <items>
                         <group width="1" height="1" alignment="left" layout="vertical" id="gsr-0R-asN">
                             <items>
@@ -76,7 +115,7 @@
                     <edgeInsets key="margins" left="1" right="1" top="0.0" bottom="0.0"/>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="129" y="102"/>
+            <point key="canvasLocation" x="68" y="102"/>
         </scene>
         <!--Detail Interface Controller-->
         <scene sceneID="0ct-jh-yBy">
